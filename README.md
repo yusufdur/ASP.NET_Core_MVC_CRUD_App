@@ -9,3 +9,5 @@ Basic crud app with asp.net core mvc
 if you don't have local server in sql server  : run this command in command prompt  => sqllocaldb create "[your server name]"
 
 3) Run the application
+
+https://bulkybookweb.azurewebsites.net/
