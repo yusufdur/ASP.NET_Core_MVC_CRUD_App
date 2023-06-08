@@ -6,6 +6,6 @@ Basic crud app with asp.net core mvc
 
 2) if you have local server in sql server   :   update server name in "appsettings.json" file in project
 
-   if you don't have local server in sql server  : run this command in command prompt  => sqllocaldb create "[your server name]"
+if you don't have local server in sql server  : run this command in command prompt  => sqllocaldb create "[your server name]"
 
 3) Run the application
