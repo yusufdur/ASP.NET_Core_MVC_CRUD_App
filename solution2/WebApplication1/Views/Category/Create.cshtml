@@ -1,0 +1,46 @@
+﻿@model Category
+
+<form method="post">
+    <div class="border p-3 mt-5">
+        <div class="row pb-3">
+            <h2 class="text-primary pb-2"> Create Category </h2>
+            <hr />
+        </div>
+
+        @*
+        <div class="mb-4">
+        <label asp-for="Id" class="mb-3 fs-5"></label>
+        <input asp-for="Id" class="form-control" />
+        </div>*@
+        <div asp-validation-summary="All"> </div> 
+        <div class="mb-4">
+            <label asp-for="Name" class="mb-3 fs-5"></label>
+            <input asp-for="Name" class="form-control" />
+            
+            <span asp-validation-for="Name" class="text-danger">  </span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="DisplayOrder" class="mb-3 fs-5"></label>
+            <input asp-for="DisplayOrder" class="form-control" />
+            <span asp-validation-for="DisplayOrder" class="text-danger">  </span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="CreatedDateTime" class="mb-3 fs-5"></label>
+            <input asp-for="CreatedDateTime" class="form" style="margin-left:20px" />
+            <span asp-validation-for="CreatedDateTime" class="text-danger">  </span>
+        </div>
+
+        @*justify-content-end*@
+        <div class="mb-4 d-flex">
+            <button type="submit" class="btn btn-warning rounded-pill rounded" style="width:100px"> Save </button>
+            <a asp-controller="Category" asp-action="Index" class="btn btn-primary rounded-pill rounded" style="width:150px; margin-left: 30px ; text-transform:center"> Back To List </a>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}
